@@ -216,8 +216,8 @@ Next, display the flash message in a front-end component, such as the site layou
           <main>
             <header></header>
             <content>
-              <div v-if="$page.flash.message" class="alert">
-                {{ $page.flash.message }}
+              <div v-if="$page.props.flash.message" class="alert">
+                {{ $page.props.flash.message }}
               </div>
               <slot />
             </content>
